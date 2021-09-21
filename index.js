@@ -25,7 +25,7 @@ camera.position.x = -50;
 camera.position.y = 25;
 camera.lookAt(0, 0, -20)
 
-scene.add(new THREE.AmbientLight(0xffffff, 1));
+scene.add(new THREE.AmbientLight(0xffffff, 2));
 
 scene.background = new THREE.Color(0xffffff);
 const textureLoader = new THREE.TextureLoader();
