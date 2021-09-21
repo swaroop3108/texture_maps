@@ -42,7 +42,7 @@ const plane = new THREE.Mesh(new THREE.PlaneGeometry(100, 100, 1500, 1500), new 
   displacementMap: heightmap,
   displacementScale: 13,
   roughnessMap: roughnessmap,
-  roughness: 0.85,
+  roughness: 0.55,
   aoMap: aomap
 }))
 plane.rotation.x = - Math.PI / 2;
