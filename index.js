@@ -1,5 +1,5 @@
 import * as THREE from 'https://threejs.org/build/three.module.js';
-import { OrbitControls } from 'https://threejs.org//examples/jsm/controls/OrbitControls.js'
+import { PointerLockControls } from 'https://threejs.org//examples/jsm/controls/PointerLockControls.js'
 
 // SCENE
 const scene = new THREE.Scene();
@@ -9,7 +9,7 @@ const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerH
 const renderer = new THREE.WebGLRenderer({ antialias: true });
 renderer.setSize(window.innerWidth, window.innerHeight);
 
-const controls = new OrbitControls(camera, renderer.domElement);
+const controls = new PointerLockControls(camera, renderer.domElement);
 controls.enableDamping = true;
 controls.update();
 
